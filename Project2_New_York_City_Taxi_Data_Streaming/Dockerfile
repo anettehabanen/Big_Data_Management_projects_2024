@@ -12,6 +12,7 @@ RUN wget -P /usr/local/spark/jars/ https://repo1.maven.org/maven2/org/apache/spa
     chmod 644 /usr/local/spark/jars/commons-pool2-2.12.0.jar && \
     rm /usr/local/spark/jars/commons-pool-1.5.4.jar && \
     pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir python-dotenv>=1.0.1
+    pip install --no-cache-dir python-dotenv>=1.0.1 \
+    pip install shapely
 
 USER ${NB_UID}
