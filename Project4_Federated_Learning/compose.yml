@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  fl-session1:
+    image: jupyter/minimal-notebook # image name and tag
+    container_name: flwr-part2 # custom container name 
+    command: start-notebook.sh --NotebookApp.token='' # removes the need for access token. Only do this for development work in your local machine
+    ports:
+      - "8888:8888" # Jupyter UI
+    volumes:
+      - "./mnt/:/home/jovyan/" # map a local folder to the Jupyter workspace folder
