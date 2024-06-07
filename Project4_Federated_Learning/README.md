@@ -7,3 +7,4 @@ Files:
 * evaluate.py - code to evaluate the model (calculate metrics)
 * upload.py - code to upload seed.npz and package files to Scaleout Studio
 * client.yaml - this was necessary for creating clients
+Data is not included, as well as package and seed files. Data was structured as client folder -> subfolders for each client data.
